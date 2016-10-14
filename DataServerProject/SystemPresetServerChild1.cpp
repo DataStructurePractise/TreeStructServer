@@ -6,6 +6,11 @@ SystemPresetServerChild1::SystemPresetServerChild1()
 	setDescription("SystemPresetServerChild1");
 }
 
+SystemPresetServerChild1::SystemPresetServerChild1(std::string description)
+{
+	setDescription(description);
+}
+
 
 SystemPresetServerChild1::~SystemPresetServerChild1()
 {

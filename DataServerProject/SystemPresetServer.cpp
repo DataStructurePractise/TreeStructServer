@@ -5,9 +5,9 @@
 SystemPresetServer::SystemPresetServer()
 {
 	setDescription("SystemPreset");
-	m_child1 = new SystemPresetServerChild1();
+	m_child1 = new SystemPresetServerChild1("SystemPresetServerChild1");
 	addChild(m_child1);
-	m_child2 = new SystemPresetServerChild1();
+	m_child2 = new SystemPresetServerChild1("SystemPresetServerChild2");
 	addChild(m_child2);
 }
 

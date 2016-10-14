@@ -9,8 +9,11 @@ ServerFactory::ServerFactory()
 	setDescription("ServerFactory");
 	paramPresetServer = new ParamPresetServer();
 	systemPresetServer = new SystemPresetServer();
-	m_lstserverList.push_back(paramPresetServer);
-	m_lstserverList.push_back(systemPresetServer);
+	//m_lstserverList.push_back(paramPresetServer);
+	//m_lstserverList.push_back(systemPresetServer);
+
+	addChild(systemPresetServer);
+	addChild(paramPresetServer);
 }
 
 
@@ -58,9 +61,11 @@ bool ServerFactory::saveData()
 	return false;
 }
 
-void main_bak()
+void main()
 {
 	ServerFactory sf;
-	sf.loadDataFactory();
-	sf.saveDataFactory();
+	//sf.loadDataFactory();
+	//sf.saveDataFactory();
+	sf.loadTreeData();
+	sf.saveTreeData();
 }

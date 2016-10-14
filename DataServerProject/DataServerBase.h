@@ -9,6 +9,8 @@ public:
 	~DataServerBase();
 	virtual bool loadData();
 	virtual bool saveData();
+	bool loadTreeData();
+	bool saveTreeData();
 	void setDescription(std::string serverName);
 	std::string getDescription();
 

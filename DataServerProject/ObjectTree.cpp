@@ -13,12 +13,12 @@ ObjectTree::~ObjectTree()
 
 void ObjectTree::addChild(DataServerBase * server)
 {
-	m_childList.push_back(server);
+	m_lstChildList.push_back(server);
 }
 
 void ObjectTree::deleteChild(DataServerBase * server)
 {
-	m_childList.remove(server);
+	m_lstChildList.remove(server);
 }
 
 bool ObjectTree::loadData()
@@ -31,7 +31,9 @@ bool ObjectTree::saveData()
 	return false;
 }
 
-bool ObjectTree::loadSelfAndTreeData()
+/*move the load and save data function to DataServerBase, it will define  the interface of load and save data.*/
+
+/*bool ObjectTree::loadSelfAndTreeData()
 {
 	loadData();
 	std::list<DataServerBase*>::iterator it;
@@ -52,3 +54,4 @@ bool ObjectTree::saveSelfAndTreeData()
 	}
 	return false;
 }
+*/

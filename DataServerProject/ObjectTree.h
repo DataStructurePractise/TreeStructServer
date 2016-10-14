@@ -15,10 +15,10 @@ public:
 	virtual bool loadData();
 	virtual bool saveData();
 
-	bool loadSelfAndTreeData();
-	bool saveSelfAndTreeData();
+	//bool loadSelfAndTreeData();
+	//bool saveSelfAndTreeData();
 
-private :
-	std::list<DataServerBase*> m_childList;
+protected:
+	std::list<DataServerBase*> m_lstChildList;
 };
 
